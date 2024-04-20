@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="keys">
+            <center>
+                <input type="text" class="display" id="display" readonly>
+                <br><br>
+                <button class="operator" onclick="operate('+')">+</button>
+                &nbsp;
+                <button class="operator" onclick="operate('-')">-</button>
+                &nbsp;
+                <button class="operator" onclick="operate('*')">*</button>
+                &nbsp;
+                <button class="operator" onclick="operate('/')">/</button>
+                &nbsp;
+                <button onclick="appendNumber('.')">.</button>
+                <br>
+                <br>
+                <button onclick="appendNumber('7')">7</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('8')">8</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('9')">9</button>
+                &nbsp;&nbsp;
+                <button onclick="clearDisplay()">C</button>
+                <br>
+                <br>
+                <button onclick="appendNumber('4')">4</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('5')">5</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('6')">6</button>
+                &nbsp;&nbsp;
+                <button onclick="calculate()">=</button>
+                <br>
+                <br>
+                <button onclick="appendNumber('1')">1</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('2')">2</button>
+                &nbsp;&nbsp;
+                <button onclick="appendNumber('3')">3</button>
+                &nbsp;&nbsp;
+                <button class="zero" onclick="appendNumber('0')">0</button>
+            </center>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
